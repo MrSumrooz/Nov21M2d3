@@ -67,7 +67,7 @@
                     </div>
                     <div>
                         <input id="picker1" type="color" class="mt-1"> <input id="picker2" type="color" class="mx-1" >
-                    <button id="Apply-Colors" class="btn btn-warning mx-1" onclick="event"><small>Apply Colors</small></button>
+                    <button id="Apply-Colors" class="btn btn-warning mx-1" ><small>Apply Colors</small></button>
                     </div>
                     <div id="Un-Orderlist">
 
@@ -233,14 +233,18 @@
 
      <div class="container mt-5 ">
          <h1 style="text-align: center;">Deal Of The Day</h1>
-         <div class="row my-4">
+         <button class="btn btn-warning" type="button" data-toggle="collapse" data-target="#collapsedayDeals" >
+            click for day deal
+          </button>
+          <div id="collapsedayDeals" class="collapse">
+         <div class=" row my-4 d-none d-sm-block" >
              <!--Ex 7) Make the "Deal of the day" section disappear on mobile screens-->
              <div class="col ">
-                 <div>
+                
                      <img src="https://pix10.agoda.net/hotelImages/5673739/0/84a6695df6d88a1bdaf2b5e5f4abfc5f.jpg?s=1024x768" class="img-fluid" />
-                 </div>
+                 
              </div>
-             <div class="col text-center text-danger mt-5 d-md-none">
+             <div class="col text-center text-danger mt-5 ">
                  <h1 >Indonesia Bali</h1>
                  <h4>31/12/2021</h4>
                  <h5>New Year Celebration</h5>
@@ -249,20 +253,44 @@
                  
              </div>
          </div>
+         </div>
            <!--Ex 9) Create a section "Last Minute", in which you'll display the pictures of the destinations as Cards-->
 
          <div class="row my-4">
-             
-            <div class="col-6">
-                <section>
-                    <h1>Last Minute Section</h1>
-                   <div class="card" >
-                       <img src="https://www.planetware.com/wpimages/2020/02/sweden-in-pictures-beautiful-places-to-photograph.jpg" class="card-img-top img-fluid" height="300px" width="400px" alt="...">
-                      
-                     </div>
+            <h1>Last Minute Section</h1>
+            
+            <section class="col">
+                    
+                <div class="card " >
+                    <img src="https://www.planetware.com/wpimages/2020/02/sweden-in-pictures-beautiful-places-to-photograph.jpg" class="card-img-top img-fluid" height="300px" width="400px" alt="...">
+                   
+                  </div>
 
-                </section>
-            </div>
+             </section>
+             <section class="col">
+                    
+                <div class="card " >
+                    <img src="https://www.planetware.com/wpimages/2020/02/sweden-in-pictures-beautiful-places-to-photograph.jpg" class="card-img-top img-fluid" height="300px" width="400px" alt="...">
+                   
+                  </div>
+
+             </section>
+             <section class="col">
+                    
+                <div class="card " >
+                    <img src="https://www.planetware.com/wpimages/2020/02/sweden-in-pictures-beautiful-places-to-photograph.jpg" class="card-img-top img-fluid" height="300px" width="400px" alt="...">
+                   
+                  </div>
+
+             </section>
+             <section class="col">
+                    
+                <div class="card " >
+                    <img src="https://www.planetware.com/wpimages/2020/02/sweden-in-pictures-beautiful-places-to-photograph.jpg" class="card-img-top img-fluid" height="300px" width="400px" alt="...">
+                   
+                  </div>
+
+             </section>
             
          </div>
      </div>  
@@ -271,12 +299,45 @@
          <footer>
             <div class="d-flex justify-content-around mt-2 text-center">
                 <p><b>Stockholm AB 103 NHA</b></p> 
-                <button class="btn btn-warning">Contact Us</button>
+                <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#exampleModal">Contact Us</button>
             </div>
          </footer>
      </div>
+
+     <!-- Button trigger modal -->
+
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          ...
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
      <script src="index.js"></script>
+     <script>
+
+
+      $('#myModal').on('shown.bs.modal', function () {
+    $('#myInput').trigger('focus')
+      })
+
+     </script>
     
   </body>
 </html>

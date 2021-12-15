@@ -44,21 +44,28 @@ let  colorPicker1 = document.getElementById("picker1")
 
 let  colorPicker2 = document.getElementById("picker2")
 
-let liLists = document.querySelectorAll("li")
+let liLists = document.getElementsByTagName("li")
+
+
+
 
 let applyColor = function(){
     for(let liList of liLists ){
         liList.style.color = colorPicker1.Value
-        liList.style.backgroundColor = colorPicker2.Value
+        liList.style.backgroundColor = "colorPicker2.Value"
     }
 
 }
+
+
 
 let buttonColor = document.getElementById("Apply-Colors")
 buttonColor.addEventListener("click",applyColor)
 
 
-
+$('#myModal').on('shown.bs.modal', function () {
+    $('#myInput').trigger('focus')
+  })
 
 
 

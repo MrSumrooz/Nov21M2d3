@@ -26,7 +26,7 @@ let newList = function(){
     parentNode.appendChild(newListElement)
     newListElement.classList.add("mt-4")
 
-    for ( i = 1; i<= genres.length; i++)
+    for ( i = 1; i < genres.length; i++)
 {
     let liNode = document.createElement("li"); 
     
@@ -39,6 +39,28 @@ let newList = function(){
  
 
 }
+
+let  colorPicker1 = document.getElementById("picker1")
+
+let  colorPicker2 = document.getElementById("picker2")
+
+let liLists = document.querySelectorAll("li")
+
+let applyColor = function(){
+    for(let liList of liLists ){
+        liList.style.color = colorPicker1.Value
+        liList.style.backgroundColor = colorPicker2.Value
+    }
+
+}
+
+let buttonColor = document.getElementById("Apply-Colors")
+buttonColor.addEventListener("click",applyColor)
+
+
+
+
+
 
 
 

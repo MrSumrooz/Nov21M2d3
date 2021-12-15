@@ -50,7 +50,7 @@
      <!--Ex 3) Add a Jumbotron section with the name and the claim of the tour operator agency--> 
       <div class="container">
         <div class="row">
-            <div class="col-10 mt-4 justify-content-center">
+            <div class="col-9 mt-4 justify-content-center">
                 <div class="jumbotron ">
                     <h1 class="display-4 my-2">Luxury Traveller</h1>
                     <p class="lead">What is a luxury traveler?
@@ -62,8 +62,13 @@
                     <a class="btn btn-warning btn-lg my-4 mx-2" href="#" role="button">Contact Us</a>
                   </div>
             </div>
-            <div class="col-2 mt-4">
-                <button class="btn btn-warning" onclick="newList()">Create UL</button>
+            <div class="col-3 mt-4">
+                <div class="d-flex"><button class="btn btn-warning" onclick="newList()"><small>Create UL</small></button>
+                    </div>
+                    <div>
+                        <input id="picker1" type="color" class="mt-1"> <input id="picker2" type="color" class="mx-1" >
+                    <button id="Apply-Colors" class="btn btn-warning mx-1" onclick="event"><small>Apply Colors</small></button>
+                    </div>
                     <div id="Un-Orderlist">
 
                     </div>

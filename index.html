@@ -1,0 +1,273 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+   
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="styles.css" rel="stylesheet" >
+    <title>Luxury Traveller</title>
+  </head>
+  <body>
+   <!-- Ex 1) Implement a navigation bar. Connected to all the sections of the page to the menu items. -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+          <a class="navbar-brand" href="#"><img src="./img/logo-png.png" height="40px" width="40px" class="mr-2" />Luxury Traveller</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Deals</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link ">Contact Us</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dashboard
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">profile</a></li>
+                  <li><a class="dropdown-item" href="#">Settings</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Account</a></li>
+                </ul>
+              </li>
+              
+            </ul>
+            
+          </div>
+        </div>
+      </nav>
+     <!--Ex 3) Add a Jumbotron section with the name and the claim of the tour operator agency--> 
+      <div class="container">
+        <div class="row">
+            <div class="col mt-4 justify-content-center">
+                <div class="jumbotron ">
+                    <h1 class="display-4 my-2">Luxury Traveller</h1>
+                    <p class="lead">What is a luxury traveler?
+                        Image result for luxury traveller
+                        The term luxury travel denotes travelling with a great deal of comfort and quality, without any stress or hassle whatsoever. It involves an elevated travel experience with minimum vexation and maximum amenities.p>
+                    <hr class="my-4">
+                    <p> 
+                         What are the Best Destinations for Luxury Travel?</p>
+                    <a class="btn btn-warning btn-lg my-4 mx-2" href="#" role="button">Contact Us</a>
+                  </div>
+            </div>
+        </div>
+
+      </div>
+<!--Ex 4) Implement the "Deal of the Week" section. In this section you'll display 4 destinations.
+         In this section you should have:
+            - 4 destinations per row when the screen is very large
+            - 3 destinations per row when you are on a tablet (or a smaller window)
+            - 2 destinations per row when you are on a small screen-->
+    <div class="container">
+        <div class="row mt-4">
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card" >
+                    <img src="https://www.brides.com/thmb/SpYbYIB3jvpeZR7ErzqhyeE-wKw=/500x350/filters:no_upscale():max_bytes(200000):strip_icc()/SunsetLagoonVillaBirdseyeview-68c2cfd7eb464d2a96dfa02f8696b93f.jpg" class="card-img-top img-fluid" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Maldives</h5>
+                      <p class="card-text"> Republic of Maldives, is an archipelagic country in the Indian subcontinent of Asia,</p>
+                      <a href="#" class="btn btn-primary">More Details</a>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card" >
+                    <img src="https://www.brides.com/thmb/SpYbYIB3jvpeZR7ErzqhyeE-wKw=/500x350/filters:no_upscale():max_bytes(200000):strip_icc()/SunsetLagoonVillaBirdseyeview-68c2cfd7eb464d2a96dfa02f8696b93f.jpg" class="card-img-top img-fluid" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Maldives</h5>
+                      <p class="card-text"> Republic of Maldives, is an archipelagic country in the Indian subcontinent of Asia,</p>
+                      <a href="#" class="btn btn-primary">More Details</a>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card" >
+                    <img src="https://www.brides.com/thmb/SpYbYIB3jvpeZR7ErzqhyeE-wKw=/500x350/filters:no_upscale():max_bytes(200000):strip_icc()/SunsetLagoonVillaBirdseyeview-68c2cfd7eb464d2a96dfa02f8696b93f.jpg" class="card-img-top img-fluid" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Maldives</h5>
+                      <p class="card-text"> Republic of Maldives, is an archipelagic country in the Indian subcontinent of Asia,</p>
+                      <a href="#" class="btn btn-primary">More Details</a>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card" >
+                    <img src="https://www.brides.com/thmb/SpYbYIB3jvpeZR7ErzqhyeE-wKw=/500x350/filters:no_upscale():max_bytes(200000):strip_icc()/SunsetLagoonVillaBirdseyeview-68c2cfd7eb464d2a96dfa02f8696b93f.jpg" class="card-img-top img-fluid" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Maldives</h5>
+                      <p class="card-text"> Republic of Maldives, is an archipelagic country in the Indian subcontinent of Asia,</p>
+                      <a href="#" class="btn btn-primary">More Details</a>
+                    </div>
+                  </div>
+            </div>
+            
+        </div>
+    </div>
+<!--Ex 5) Implement the "Welcome Summer" section. In this section you'll propose 6 destinations to your user
+            In this section you should have:
+                - 6 destinations per row when the screen is very large
+                - 3 destinations per row when you are on a tablet (or a smaller window)
+                - 2 destinations per row when you are on a small screen-->
+
+    <div class="container mt-5">
+        <h1 style="text-align: center;">Deals of The Week</h1>
+        <div class="row ">
+            <div class= "col-6 col-sm-6 col-md-4 col-lg-2">
+                <section >
+                    
+                        <div class="card" >
+                            <img src="https://caspiannews.com/media/caspian_news/all_original_photos/1563443994_2302303_1563443923_6374886Russia_tourism.jpg" class="card-img-top img-fluid" height="250px" width="300px" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Russia</h5>
+                              <p class="card-text">  Russian culture for centuries, and has a vast stock of stock of cultural buildings and institutions Russian culture for centuries, and has a vast stock of stock of cultural buildings and institutions</p>
+                              <a href="#" class="btn btn-primary">More Details</a>
+                            </div>
+                          </div>
+                    
+                </section>
+            </div>
+            <div class= "col-6 col-sm-6 col-md-4 col-lg-2">
+                <section >
+                    
+                        <div class="card" >
+                            <img src="https://media.tacdn.com/media/attractions-splice-spp-674x446/07/03/1c/9c.jpg" class="card-img-top img-fluid" height="250px" width="300px" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Paris</h5>
+                              <p class="card-text"> France's capital, is a major European city and a global center for art, fashion, gastronomy and culture. Its 19th-century cityscape is crisscrossed by wide boulevards </p>
+                              <a href="#" class="btn btn-primary">More Details</a>
+                            </div>
+                          </div>
+                    
+                </section>
+            </div>
+            <div class= "col-6 col-sm-6 col-md-4 col-lg-2">
+                <section >
+                    
+                        <div class="card" >
+                            <img src="https://thumbor.forbes.com/thumbor/960x0/https%3A%2F%2Fspecials-images.forbesimg.com%2Fimageserve%2F5f4271b748c8d57f1cba52d9%2FThe-fishing-village-Reine-in-Norway-s-Lofoten-Islands-%2F960x0.jpg%3Ffit%3Dscale" class="card-img-top img-fluid" height="250px" width="300px" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Norway</h5>
+                              <p class="card-text"> Norway is a Scandinavian country encompassing mountains, glaciers and deep coastal fjords. Oslo, the capital, is a city of green </p>
+                              <a href="#" class="btn btn-primary">More Details</a>
+                            </div>
+                          </div>
+                    
+                </section>
+            </div>
+            <div class= "col-6 col-sm-6 col-md-4 col-lg-2">
+                <section >
+                    
+                        <div class="card" >
+                            <img src="https://www.brides.com/thmb/SpYbYIB3jvpeZR7ErzqhyeE-wKw=/500x350/filters:no_upscale():max_bytes(200000):strip_icc()/SunsetLagoonVillaBirdseyeview-68c2cfd7eb464d2a96dfa02f8696b93f.jpg" class="card-img-top img-fluid" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Maldives</h5>
+                              <p class="card-text"> Republic of Maldives, is an archipelagic country in the Indian subcontinent of Asia,
+                                Republic of Maldives, is an archipelagic country in the Indian subcontinent of Asia,
+                              </p>
+                              <a href="#" class="btn btn-primary">More Details</a>
+                            </div>
+                          </div>
+                    
+                </section>
+            </div>
+            <div class= "col-6 col-sm-6 col-md-4 col-lg-2">
+                <section >
+                    
+                        <div class="card" >
+                            <img src="https://i.natgeofe.com/n/81cf55d9-8f0d-4bd7-a69f-9dd17186ed87/helsinki-finland_16x9.jpg?w=1200" class="card-img-top img-fluid" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Finland</h5>
+                              <p class="card-text"> Finland is a Northern European nation bordering Sweden, Norway and Russia. Its capital, Helsinki, occupies a peninsula and surrounding islands in the Baltic Sea.</p>
+                              <a href="#" class="btn btn-primary">More Details</a>
+                            </div>
+                          </div>
+                    
+                </section>
+            </div>
+            <div class= "col-6 col-sm-6 col-md-4 col-lg-2">
+                <section >
+                    
+                        <div class="card" >
+                            <img src="https://www.planetware.com/wpimages/2020/02/sweden-in-pictures-beautiful-places-to-photograph.jpg" class="card-img-top img-fluid" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Sweden</h5>
+                              <p class="card-text"> Sweden is a Scandinavian nation with thousands of coastal islands and inland lakes, along with vast boreal forests and glaciated mountains.</p>
+                              <a href="#" class="btn btn-primary">More Details</a>
+                            </div>
+                          </div>
+                    
+                </section>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Ex 6) Implement a "Deal of the day" section. In this section you'll have:
+            - 66% of the page with a picture of the destination
+            - 33% with Name, dates, price and a short description-->
+
+     <div class="container mt-5">
+         <h1 style="text-align: center;">Deal Of The Day</h1>
+         <div class="row my-4">
+             <div class="col">
+                 <div>
+                     <img src="https://pix10.agoda.net/hotelImages/5673739/0/84a6695df6d88a1bdaf2b5e5f4abfc5f.jpg?s=1024x768" class="img-fluid" />
+                 </div>
+             </div>
+             <div class="col text-center text-danger mt-5">
+                 <h1 >Indonesia Bali</h1>
+                 <h4>31/12/2021</h4>
+                 <h5>New Year Celebration</h5>
+                 <p> AYANA Resort and Spa, BALI, Bali, Indonesia - Photos, Room Rates & Promotions</p>
+                 <h6><price> Starting From $ 999</price></h6>
+                 
+             </div>
+         </div>
+     </div>       
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    
+  </body>
+</html>
+    <!-- M2-D3 ASSIGNMENT RULES
+        - 
+
+
+       
+
+
+         
+
+        
+        
+       
+
+       
+        
+       
+
+        Ex 7) Make the "Deal of the day" section disappear on mobile screens
+        Ex 8) Add to the Welcome Summer destinations section a large shadow
+        Ex 9) Create a section "Last Minute", in which you'll display the pictures of the destinations as Cards
+        Ex 10) Create a "Testimonial" section, in which the user can find several feedbacks from fake customers
+        Ex 11) Create a footer with the company informations and a "Contact Us" button
+
+        Ex 11) Create a button next to each section to collapse and reopen the given section
+        Ex 12) Create a method that counts the number of "travels" on the page
+        Ex 13) Create a modal view with a message and a email field
+        Ex 14) When the user clicks on "contact us" the modal is displayed
+        Ex 15) Create a function that adds a "HOT" badge to all the "Welcome Summer" offers
+        Ex 16) Create a function to delete all "cards" from the page
+      -->
